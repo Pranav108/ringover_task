@@ -1,13 +1,15 @@
 const express = require("express");
+const morgan = require("morgan");
+const userRouter = require("./routes/userRoutes");
 
 const app = express();
+
+//  MIDDLEWARE
+if (process.env.NODE_ENV === "development") app.use(morgan("dev"));
+
 app.use(express.json());
 
-app.get("/api/v1/users", (req, res) => {
-  res.status(200).json({
-    status: "success",
-    message: "project Initialized",
-  });
-});
-const port = 3100;
-app.listen(port, () => console.log(`App running on port ${port}...`));
+app.use("/api/v1/users", userRouter);
+
+//  START SERVER
+module.exports = app;
