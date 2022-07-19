@@ -1,4 +1,5 @@
 {
   "singleQuote": true,
-  "indent_size": 1
+  "indent_size": 1,
+  "indent_style": true
 }
