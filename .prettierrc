@@ -1,5 +1,6 @@
 {
   "singleQuote": true,
+  "parser": "flow",
   "indent_size": 1,
   "indent_style": true
 }
