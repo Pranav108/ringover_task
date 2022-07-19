@@ -1,0 +1,14 @@
+{
+  "name": "ringover",
+  "version": "1.0.0",
+  "description": "Internship task 2 for backend Intern",
+  "main": "app.js",
+  "scripts": {
+    "start_dev": "nodemon app.js"
+  },
+  "author": "Pranav",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
