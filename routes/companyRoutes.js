@@ -9,6 +9,7 @@ router
 router
   .route('/:id')
   .get(companyController.getCompany)
+  .patch(companyController.updateCompany)
   .delete(companyController.deleteCompany);
 
 module.exports = router;

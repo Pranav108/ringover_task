@@ -37,3 +37,20 @@ exports.deleteCompany = catchAsync(async (req, res, next) => {
     data: null,
   });
 });
+
+exports.updateCompany = catchAsync(async (req, res, next) => {
+  const updatedCompany = await Company.findByIdAndUpdate(
+    req.params.id,
+    req.body,
+    {
+      new: true,
+      runValidators: true,
+    }
+  );
+  if (!updatedCompany)
+    return next(new AppError('No Company found with that ID', 404));
+  res.status(200).json({
+    status: 'success',
+    data: { updatedCompany },
+  });
+});

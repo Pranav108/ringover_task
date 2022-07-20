@@ -1,6 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const userRouter = require('./routes/userRoutes');
+const listRouter = require('./routes/listRoutes');
 const companyRouter = require('./routes/companyRoutes');
 const globalErrorHandler = require('./controllers/errorController');
 
@@ -11,6 +12,7 @@ if (process.env.NODE_ENV === 'development') app.use(morgan('dev'));
 
 app.use(express.json());
 
+app.use('/api/v1/lists', listRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/companies', companyRouter);
 
