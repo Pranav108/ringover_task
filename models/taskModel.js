@@ -24,10 +24,10 @@ const taskSchema = new mongoose.Schema(
   { toJSON: { virtuals: true }, toObject: { virtuals: true } }
 );
 
-// taskSchema.pre(/^find/, function (next) {
-//   this.populate({ path: 'list', select: 'activeStatus' });
-//   next();
-// });
+taskSchema.pre(/^find/, function (next) {
+  this.populate({ path: 'list', select: 'activeStatus' });
+  next();
+});
 
 // taskSchema.pre(/^find/, function (next) {
 //   this.find({ activeStatus: 'play' });

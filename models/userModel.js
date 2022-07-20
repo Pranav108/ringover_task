@@ -26,6 +26,12 @@ const userSchema = new mongoose.Schema({
     ref: 'Company',
     required: [true, 'User must belong to a Company'],
   },
+  lists: [
+    {
+      type: mongoose.Schema.ObjectId,
+      ref: 'List',
+    },
+  ],
 });
 
 userSchema.pre('save', async function (next) {

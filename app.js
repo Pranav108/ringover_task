@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const userRouter = require('./routes/userRoutes');
 const listRouter = require('./routes/listRoutes');
 const companyRouter = require('./routes/companyRoutes');
+const taskRouter = require('./routes/taskRoutes');
 const globalErrorHandler = require('./controllers/errorController');
 
 const app = express();
@@ -14,6 +15,7 @@ app.use(express.json());
 
 app.use('/api/v1/lists', listRouter);
 app.use('/api/v1/users', userRouter);
+app.use('/api/v1/tasks', taskRouter);
 app.use('/api/v1/companies', companyRouter);
 
 app.all('*', (req, res, next) => {

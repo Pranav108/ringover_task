@@ -1,7 +1,32 @@
 [
-  { "_id": "62d782c10aa9c9298891ebc5" },
-  { "_id": "62d782c10aa9c9298891ebc6" },
-  { "_id": "62d782c10aa9c9298891ebcd" },
-  { "_id": "62d782c10aa9c9298891ebc4" },
-  { "_id": "62d782c10aa9c9298891ebc7" }
+  {
+    "_id": "62d7cedc933e1f3f9836ca34",
+    "name": "Lourdes Browning",
+    "email": "loulou@example.com",
+    "password": "$2a$12$Joh9uocEoS/cUfa6/zoOHujJldapRCzLXSnxFnBLlr8QaX2nUMRH6"
+  },
+  {
+    "_id": "62d7cedc933e1f3f9836ca35",
+    "name": "Sophie Louise Hart",
+    "email": "sophie@example.com",
+    "password": "$2a$12$CwZEP6HYt.1Y8RGlJsWf7uPLbDgxdcvUS3lKkZsYSFrp2.usUzsOe"
+  },
+  {
+    "_id": "62d7cedc933e1f3f9836ca36",
+    "name": "Steve T. Scaife",
+    "email": "steve@example.com",
+    "password": "$2a$12$cdn7XCkfYZCgCwEp4rKrS.g5O22ggGI60hAa8L82/fEzMdgWNXQ6G"
+  },
+  {
+    "_id": "62d7cedc933e1f3f9836ca37",
+    "name": "Jonas Schmedtmann",
+    "email": "admin@natours.io",
+    "password": "$2a$12$arDCR7eQUufmP.qPdYoaLOSyGsdkaka/lvCY1wrxfWjeC2ytEv19e"
+  },
+  {
+    "_id": "62d7cedc933e1f3f9836ca38",
+    "name": "Ayla Cornell",
+    "email": "ayls@example.com",
+    "password": "$2a$12$NcXipHZ3s6SkvOhKaCZdw.v4y5zqxvqRwjE217RVHjShJhBLe8EDe"
+  }
 ]
