@@ -1,7 +1,12 @@
 const express = require('express');
 const companyController = require('../controllers/companyController');
+const authController = require('../controllers/authController');
 
 const router = express.Router();
+
+//protect all routes after this middleware
+router.use(authController.protect);
+
 router
   .route('/')
   .get(companyController.getAllCompany)
