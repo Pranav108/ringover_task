@@ -1,10 +1,13 @@
 const mongoose = require('mongoose');
 
 const listSchema = new mongoose.Schema({
-  details: {
+  name: {
     type: String,
     required: [true, 'A list must have details'],
+    trim: true,
+    unique: true,
   },
+  details: String,
   activeStatus: {
     type: String,
     enum: {
@@ -15,10 +18,10 @@ const listSchema = new mongoose.Schema({
   },
 });
 
-listSchema.pre(/^find/, function (next) {
-  this.find({ activeStatus: 'play' });
-  next();
-});
+// listSchema.pre(/^find/, function (next) {
+//   this.find({ activeStatus: 'play' });
+//   next();
+// });
 
 const List = mongoose.model('List', listSchema);
 module.exports = List;

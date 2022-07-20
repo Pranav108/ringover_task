@@ -50,3 +50,20 @@ exports.updateTask = catchAsync(async (req, res, next) => {
     data: { updatedTask },
   });
 });
+
+exports.fetchUsersTask = catchAsync(async (req, res, next) => {
+  const { userid, listname, status } = req.params;
+  const tasks = await Task.find({ completed: status, user: userid })
+    .populate({
+      path: 'list',
+      select: 'activeStatus',
+      match: { activeStatus: 'play' },
+    })
+    .then((tasks) => tasks.filter((todo) => todo.list));
+
+  res.status(200).json({
+    status: 'success',
+    results: tasks.length,
+    data: { tasks },
+  });
+});
