@@ -21,7 +21,11 @@ const userSchema = new mongoose.Schema({
     minlength: [8, 'Please provide a password with at least 8 characters'],
     select: false,
   },
-  Lists: [String],
+  company: {
+    type: mongoose.Schema.ObjectId,
+    ref: 'Company',
+    required: [true, 'User must belong to a Company'],
+  },
 });
 
 userSchema.pre('save', async function (next) {
