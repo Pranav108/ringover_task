@@ -1,62 +1,7 @@
 [
-  {
-    "_id": { "$oid": "5c8a1d5b0190b214360dc057" },
-    "name": "Jonas Schmedtmann",
-    "email": "admin@natours.io",
-    "password": "$2a$12$Q0grHjH9PXc6SxivC8m12.2mZJ9BbKcgFpwSG4Y1ZEII8HJVzWeyS"
-  },
-  {
-    "_id": { "$oid": "5c8a1dfa2f8fb814b56fa181" },
-    "name": "Lourdes Browning",
-    "email": "loulou@example.com",
-    "password": "$2a$12$hP1h2pnNp7wgyZNRwPsOTeZuNzWBv7vHmsR3DT/OaPSUBQT.y0S.."
-  },
-  {
-    "_id": { "$oid": "5c8a1e1a2f8fb814b56fa182" },
-    "name": "Sophie Louise Hart",
-    "email": "sophie@example.com",
-    "password": "$2a$12$9nFqToiTmjgfFVJiQvjmreLt4k8X4gGYCETGapSZOb2hHa55t0dDq"
-  },
-  {
-    "_id": { "$oid": "5c8a1ec62f8fb814b56fa183" },
-    "name": "Ayla Cornell",
-    "email": "ayls@example.com",
-    "password": "$2a$12$tm33.M/4pfEbZF64WbFuHuVFv85v4qEhi.ik8njbud7yaoqCZpjiy"
-  },
-  {
-    "_id": { "$oid": "5c8a1f292f8fb814b56fa184" },
-    "name": "Leo Gillespie",
-    "email": "leo@example.com",
-    "password": "$2a$12$OOPr90tBEBF1Iho3ox0Jde0O/WXUR0VLA5xdh6tWcu7qb.qOCvSg2"
-  },
-  {
-    "_id": { "$oid": "5c8a1f4e2f8fb814b56fa185" },
-    "name": "Jennifer Hardy",
-    "email": "jennifer@example.com",
-    "password": "$2a$12$XCXvvlhRBJ8CydKH09v1v.jpg0hB9gVVfMVEoz4MsxqL9zb5PrF42"
-  },
-  {
-    "_id": { "$oid": "5c8a201e2f8fb814b56fa186" },
-    "name": "Kate Morrison",
-    "email": "kate@example.com",
-    "password": "$2a$12$II1F3aBSFDF3Xz7iB4rk/.a2dogwkClMN5gGCWrRlILrG1xtJG7q6"
-  },
-  {
-    "_id": { "$oid": "5c8a20d32f8fb814b56fa187" },
-    "name": "Eliana Stout",
-    "email": "eliana@example.com",
-    "password": "$2a$12$Jb/ILhdDV.ZpnPMu19xfe.NRh5ntE2LzNMNcsty05QWwRbmFFVMKO"
-  },
-  {
-    "_id": { "$oid": "5c8a211f2f8fb814b56fa188" },
-    "name": "Cristian Vega",
-    "email": "chris@example.com",
-    "password": "$2a$12$r7/jtdWtzNfrfC7zw3uS.eDJ3Bs.8qrO31ZdbMljL.lUY0TAsaAL6"
-  },
-  {
-    "_id": { "$oid": "5c8a21d02f8fb814b56fa189" },
-    "name": "Steve T. Scaife",
-    "email": "steve@example.com",
-    "password": "$2a$12$q7v9dm.S4DvqhAeBc4KwduedEDEkDe2GGFGzteW6xnHt120oRpkqm"
-  }
+  { "_id": "62d782c10aa9c9298891ebc5" },
+  { "_id": "62d782c10aa9c9298891ebc6" },
+  { "_id": "62d782c10aa9c9298891ebcd" },
+  { "_id": "62d782c10aa9c9298891ebc4" },
+  { "_id": "62d782c10aa9c9298891ebc7" }
 ]
