@@ -32,9 +32,9 @@ exports.login = catchAsync(async (req, res, next) => {
 
 exports.logout = catchAsync(async (req, res, next) => {
   //write logout logic here
-  res.status(204).json({
+  res.status(200).json({
     result: 'success',
-    token: null,
+    token: undefined,
     data: 'Successfully Logged Out',
   });
 });
@@ -44,10 +44,10 @@ exports.protect = catchAsync(async (req, res, next) => {
   let token;
   if (
     req.headers.authorization &&
-    req.headers.authorization.startsWith('Bearer ')
+    req.headers.authorization.startsWith('Bearer')
   )
     token = req.headers.authorization.split(' ')[1];
-  if (!token)
+  if (!token || token === 'null')
     return next(
       new AppError(
         'You are not authorized to access this page. Please login first.'

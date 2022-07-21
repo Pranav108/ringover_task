@@ -4,7 +4,8 @@
   "description": "Internship task 2 for backend Intern",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start_dev": "nodemon server.js",
+    "start_prod": "SET NODE_ENV=production && nodemon server.js"
   },
   "author": "Pranav",
   "license": "ISC",
